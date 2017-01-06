@@ -26,4 +26,5 @@ def createdb():
 
 @app.cli.command(with_appcontext=False)
 def initdb():
+    from models import *
     createdb()
