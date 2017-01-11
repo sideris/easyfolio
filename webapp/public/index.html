@@ -4,45 +4,162 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--<link rel="shortcut icon" href="{{ STATIC_URL }}/favicon.ico">-->
-	<link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='favico/apple-icon-57x57.png') }}">
-	<link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='favico/apple-icon-57x57.png') }}">
-	<link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='favico/apple-icon-60x60.png') }}">
-	<link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='favico/apple-icon-72x72.png') }}">
-	<link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='favico/apple-icon-76x76.png') }}">
-	<link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='favico/apple-icon-114x114.png') }}">
-	<link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='favico/apple-icon-120x120.png') }}">
-	<link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='favico/apple-icon-144x144.png') }}">
-	<link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='favico/apple-icon-152x152.png') }}">
-	<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favico/apple-icon-180x180.png') }}">
-	<link rel="icon" type="image/png" sizes="192x192"  href="{{ url_for('static', filename='favico/android-icon-192x192.png') }}">
-	<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favico/favicon-32x32.png') }}">
-	<link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='favico/favicon-96x96.png') }}">
-	<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favico/favicon-16x16.png') }}">
-	<link rel="manifest" href="{{ url_for('static', filename='favico/manifest.json') }}">
+	<link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/static/favico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/static/favico/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/static/favico/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/static/favico/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/static/favico/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="%PUBLIC_URL%/static/favico/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="%PUBLIC_URL%/static/favico/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="%PUBLIC_URL%/static/favico/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="%PUBLIC_URL%/static/favico/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/static/favico/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="%PUBLIC_URL%/static/favico/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/static/favico/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="%PUBLIC_URL%/static/favico/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/static/favico/favicon-16x16.png">
+	<link rel="manifest" href="%PUBLIC_URL%/static/favico/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="{{ url_for('static', filename='favico/ms-icon-144x144.png') }}">
+	<meta name="msapplication-TileImage" content="%PUBLIC_URL%/static/favico/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	<title>the long view</title>
 </head>
 <body>
-	<div id="root">
-		<div id="topContainer" class="col-md-12">
-			<div id="savings" class="col-md-offset-10 col-md-1">
-				<i class="moneyIcon fa fa-money"></i>
+<!--<div id="root">-->
+	<!--<div id="topContainer" class="col-md-12">-->
+		<!--<div id="logo"></div>-->
+		<!--<div id="moneyStatus" class="col-md-offset-9 col-md-3">-->
+			<!--<div id="savings">-->
+				<!--<i class="moneyIcon fa fa-money noselect"></i>-->
+				<!--<span class="moneyValue">850</span>-->
+			<!--</div>-->
+			<!--<div id="revenue">-->
+				<!--<i class="moneyIcon fa fa-exchange noselect"></i>-->
+				<!--<span class="moneyValue">3150</span>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
+
+	<!--<div id="middleContainer" class="col-md-12">-->
+		<!--<div id="cashflowView"></div>-->
+	<!--</div>-->
+	<!--<div id="bottomContainer" class="col-md-12">-->
+		<!--<div id="assets">-->
+			<!--<table id="asset-table" class="col-md-3"></table>-->
+		<!--</div>-->
+		<!--<div id="liabilities" class="col-md-3">-->
+			<!--<table id="liabilities-table"></table>-->
+		<!--</div>-->
+		<!--<div id="other" class="col-md-3"></div>-->
+	<!--</div>-->
+<!--</div>-->
+
+<div id="root" class="container-fluid">
+	<div class="row">
+		<div id="logo"></div>
+		<div id="moneyStatus" class="col-md-offset-9 col-md-3">
+			<div id="savings">
+				<i class="moneyIcon fa fa-money noselect"></i>
 				<span class="moneyValue">850</span>
 			</div>
-			<div id="revenue" class="col-xs-offset-1 col-md-1">
-				<i class="moneyIcon fa fa-exchange"></i>
+			<div id="revenue">
+				<i class="moneyIcon fa fa-exchange noselect"></i>
 				<span class="moneyValue">3150</span>
 			</div>
 		</div>
-		<div id="cashflowView" class="col-md-12" style="width:100%;height:400px;"></div>
+	</div>
 
-		<div id="bottomContainer" class="col-md-12">
-			<div id="assets"></div>
-			<div id="liabilities"></div>
-			<div id="other"></div>
+	<div class="row" id="middleContainer">
+		<div id="cashflowView" class="col-md-12">
 		</div>
 	</div>
+
+	<div class="row" id="assets">
+		<div class="col-md-3">
+			<table class="table table-condensed">
+				<thead>
+					<tr>
+						<th>#</th><th>Product</th><th>Payment Taken</th><th>Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>TB - Monthly</td>
+						<td>01/04/2012</td>
+						<td>Default</td>
+					</tr>
+					<tr class="active">
+						<td>1</td>
+						<td>TB - Monthly</td>
+						<td>01/04/2012</td>
+						<td>Approved</td>
+					</tr>
+					<tr class="success">
+						<td>2</td>
+						<td>TB - Monthly</td>
+						<td>02/04/2012</td>
+						<td>Declined</td>
+					</tr>
+					<tr class="warning">
+						<td>3</td>
+						<td>TB - Monthly</td>
+						<td>03/04/2012</td>
+						<td>Pending</td>
+					</tr>
+					<tr class="danger">
+						<td>4</td>
+						<td>TB - Monthly</td>
+						<td>04/04/2012</td>
+						<td>Call in to confirm</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-md-3" id="liabilities">
+			<table class="table table-condensed">
+				<thead>
+					<tr>
+						<th>#</th><th>Product</th><th>Payment Taken</th><th>Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>TB - Monthly</td>
+						<td>01/04/2012</td>
+						<td>Default</td>
+					</tr>
+					<tr class="active">
+						<td>1</td>
+						<td>TB - Monthly</td>
+						<td>01/04/2012</td>
+						<td>Approved</td>
+					</tr>
+					<tr class="success">
+						<td>2</td>
+						<td>TB - Monthly</td>
+						<td>02/04/2012</td>
+						<td>Declined</td>
+					</tr>
+					<tr class="warning">
+						<td>3</td>
+						<td>TB - Monthly</td>
+						<td>03/04/2012</td>
+						<td>Pending</td>
+					</tr>
+					<tr class="danger">
+						<td>4</td>
+						<td>TB - Monthly</td>
+						<td>04/04/2012</td>
+						<td>Call in to confirm</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-md-6">
+		</div>
+	</div>
+</div>
 </body>
 </html>

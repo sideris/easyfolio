@@ -29,6 +29,7 @@ function CashFlowView(data) {
 			.attr("height", dimensions.height)
 			.attr("viewBox", `0 0 ${dimensions.width + dimensions.margin.left} ${dimensions.height + dimensions.margin.bottom}`)
 			.attr("preserveAspectRatio", "xMidYMid meet")
+			.classed('tlvSvg', true)
 
 		svg.append("g")
 			.classed("xAxis", true)
