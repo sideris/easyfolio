@@ -4,34 +4,34 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--<link rel="shortcut icon" href="{{ STATIC_URL }}/favicon.ico">-->
-	<link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='/../favico/apple-icon-57x57.png') }}">
-	<!--<link rel="apple-touch-icon" sizes="57x57" href="{{ STATIC_URL }}/../favico/apple-icon-57x57.png">-->
-	<!--<link rel="apple-touch-icon" sizes="60x60" href="{{ STATIC_URL }}/../favico/apple-icon-60x60.png">-->
-	<!--<link rel="apple-touch-icon" sizes="72x72" href="{{ STATIC_URL }}/../favico/apple-icon-72x72.png">-->
-	<!--<link rel="apple-touch-icon" sizes="76x76" href="{{ STATIC_URL }}/../favico/apple-icon-76x76.png">-->
-	<!--<link rel="apple-touch-icon" sizes="114x114" href="{{ STATIC_URL }}/../favico/apple-icon-114x114.png">-->
-	<!--<link rel="apple-touch-icon" sizes="120x120" href="{{ STATIC_URL }}/../favico/apple-icon-120x120.png">-->
-	<!--<link rel="apple-touch-icon" sizes="144x144" href="{{ STATIC_URL }}/../favico/apple-icon-144x144.png">-->
-	<!--<link rel="apple-touch-icon" sizes="152x152" href="{{ STATIC_URL }}/../favico/apple-icon-152x152.png">-->
-	<!--<link rel="apple-touch-icon" sizes="180x180" href="{{ STATIC_URL }}/../favico/apple-icon-180x180.png">-->
-	<!--<link rel="icon" type="image/png" sizes="192x192"  href="{{ STATIC_URL }}/../favico/android-icon-192x192.png">-->
-	<!--<link rel="icon" type="image/png" sizes="32x32" href="{{ STATIC_URL }}/../favico/favicon-32x32.png">-->
-	<!--<link rel="icon" type="image/png" sizes="96x96" href="{{ STATIC_URL }}/../favico/favicon-96x96.png">-->
-	<!--<link rel="icon" type="image/png" sizes="16x16" href="{{ STATIC_URL }}/../favico/favicon-16x16.png">-->
-	<link rel="manifest" href="{{ url_for('static', filename='/../favico/manifest.json') }}">
+	<link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='favico/apple-icon-57x57.png') }}">
+	<link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='favico/apple-icon-57x57.png') }}">
+	<link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='favico/apple-icon-60x60.png') }}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='favico/apple-icon-72x72.png') }}">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='favico/apple-icon-76x76.png') }}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', filename='favico/apple-icon-114x114.png') }}">
+	<link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', filename='favico/apple-icon-120x120.png') }}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', filename='favico/apple-icon-144x144.png') }}">
+	<link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='favico/apple-icon-152x152.png') }}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='favico/apple-icon-180x180.png') }}">
+	<link rel="icon" type="image/png" sizes="192x192"  href="{{ url_for('static', filename='favico/android-icon-192x192.png') }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favico/favicon-32x32.png') }}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='favico/favicon-96x96.png') }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favico/favicon-16x16.png') }}">
+	<link rel="manifest" href="{{ url_for('static', filename='favico/manifest.json') }}">
 	<meta name="msapplication-TileColor" content="#ffffff">
-	<meta name="msapplication-TileImage" content="{{ STATIC_URL }}/../favico/ms-icon-144x144.png">
+	<meta name="msapplication-TileImage" content="{{ url_for('static', filename='favico/ms-icon-144x144.png') }}">
 	<meta name="theme-color" content="#ffffff">
 	<title>the long view</title>
 </head>
 <body>
 	<div id="root">
 		<div id="topContainer" class="col-md-12">
-			<div id="savings" class="col-md-1">
+			<div id="savings" class="col-md-offset-10 col-md-1">
 				<i class="moneyIcon fa fa-money"></i>
 				<span class="moneyValue">850</span>
 			</div>
-			<div id="revenue" class="col-md-1">
+			<div id="revenue" class="col-xs-offset-1 col-md-1">
 				<i class="moneyIcon fa fa-exchange"></i>
 				<span class="moneyValue">3150</span>
 			</div>

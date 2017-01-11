@@ -9,7 +9,7 @@ PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
 
 
 app = Flask(__name__,  template_folder='../webapp/build', static_folder='../webapp/build/static')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:denbaineisremouni@db/xodb'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:test@db/tlvdb'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)

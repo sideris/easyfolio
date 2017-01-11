@@ -14,6 +14,10 @@ body {
   border-right: 1px #5e5e5e;
 }
 
+/*#savings {*/
+  /*margin-right: 20px;*/
+/*}*/
+
 .moneyIcon{
   position: relative;
   left: 10px;
